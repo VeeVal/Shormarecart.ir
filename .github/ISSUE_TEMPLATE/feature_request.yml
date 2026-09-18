@@ -1,0 +1,58 @@
+name: Feature request
+description: Propose an improvement aligned with the product boundaries
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the PRD and existing issues first. ShomareCart does not process payments or collect banking credentials.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who experiences the problem, in what situation, and what are they trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Describe the desired behavior without prescribing implementation unless necessary.
+    validations:
+      required: true
+  - type: dropdown
+    id: user
+    attributes:
+      label: Primary user
+      options:
+        - Payer
+        - Driver
+        - Shopkeeper or service provider
+        - Street performer
+        - Ordinary individual
+        - Contributor or maintainer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Privacy, security, accessibility, and RTL considerations
+      description: Explain likely risks or write “Not identified yet.”
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and reviewed the PRD.
+          required: true
+        - label: This proposal does not require ShomareCart to collect bank credentials or claim a transfer succeeded.
+          required: true

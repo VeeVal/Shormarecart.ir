@@ -1,0 +1,14 @@
+---
+description: Use Codebase Memory MCP for repository discovery and impact analysis
+alwaysApply: true
+---
+
+# Codebase Memory
+
+- At the start of codebase work, confirm the current repository is indexed with `codebase-memory-mcp`.
+- Use its architecture, semantic search, call-path, and change-impact tools before broad file-by-file exploration.
+- Check index coverage for any cited or edited paths; directly inspect files that are skipped, stale, or only partially indexed.
+- Re-index after a large pull, scaffold, migration, or other substantial structural change.
+- Treat graph results as navigation evidence, not as a substitute for reading the exact code being changed.
+- Never place secrets or real customer/payment data in graph queries, fixtures, or architecture records.
+

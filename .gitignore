@@ -1,0 +1,8 @@
+# Codebase Memory keeps its working database in the configured private user cache.
+# Do not commit generated graph snapshots unless the team explicitly adopts them.
+.codebase-memory/
+
+# Local setup/download remnants.
+.cbm-download/
+codebase-memory-install.ps1
+
